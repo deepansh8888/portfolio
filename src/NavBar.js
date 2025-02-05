@@ -1,8 +1,11 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+    const navigate = useNavigate();
     const [toggleIcon, setToggleIcon] = useState('light.jpg');
+
     const toggleFunction = () => {
         if(toggleIcon==='light.jpg'){
             setToggleIcon('dark.jpg');
@@ -21,11 +24,13 @@ const NavBar = () => {
      <div id='nav-buttons'>
         <a href="gfg.com">articles</a>
         <span>|</span>
-        <a href="/home">home</a>
+        <div onClick={()=>{navigate("/home")}}>home</div>
         <span>|</span>
         <a href="blog.com">blog</a>
         <span>|</span>
-        <a href="contact">contact</a>
+        <div onClick={()=>{navigate("/contact")}}>contact</div>
+        <span>|</span>
+        <div onClick={()=>navigate('/hireme')} >hire me</div>
 
         <button id="theme-change-btn" onClick={toggleFunction}>{toggleIcon}</button>
      </div>

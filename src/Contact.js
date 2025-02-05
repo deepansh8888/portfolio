@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Contact = () => {
+   
     return (
         <>
         <h1><span>👋🏼</span> say hi</h1>
