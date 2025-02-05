@@ -1,91 +1,82 @@
 import React from 'react';
 
 const Home = () => {
-  // Filler data for projects
   const projects = [
     {
       title: 'BlogWise',
-      description: 'A modern blogging platform to share your ideas and stories.',
+      description: 'A blogging platform for sharing insights and stories.',
       techimages: [
-        'https://via.placeholder.com/50?text=React',
-        'https://via.placeholder.com/50?text=Node'
+        'https://picsum.photos/seed/picsum/200',
+        'https://picsum.photos/seed/picsum/200'
       ],
-      image: 'https://picsum.photos/seed/blogwise/400/300',
-      livelink: 'https://blogwise.example.com',
+      image: 'https://picsum.photos/seed/picsum/200',
+      livelink: 'https://example.com/blogwise',
       githublink: 'https://github.com/example/blogwise',
     },
     {
       title: 'KubeWise',
-      description: 'A tool for managing Kubernetes clusters efficiently.',
+      description: 'A Kubernetes management tool designed for developers.',
       techimages: [
-        'https://via.placeholder.com/50?text=K8s',
-        'https://via.placeholder.com/50?text=Docker'
+        'https://picsum.photos/seed/picsum/200',
+        'https://picsum.photos/seed/picsum/200'
       ],
-      image: 'https://picsum.photos/seed/kubewise/400/300',
-      livelink: 'https://kubewise.example.com',
+      image: 'https://picsum.photos/seed/picsum/200',
+      livelink: 'https://example.com/kubewise',
       githublink: 'https://github.com/example/kubewise',
     },
     {
       title: 'OneBlood',
-      description: 'A platform connecting blood donors with recipients in need.',
+      description: 'A platform to connect blood donors with those in need.',
       techimages: [
-        'https://via.placeholder.com/50?text=Firebase',
-        'https://via.placeholder.com/50?text=React'
+        'https://picsum.photos/seed/picsum/200',
+        'https://picsum.photos/seed/picsum/200'
       ],
-      image: 'https://picsum.photos/seed/oneblood/400/300',
-      livelink: 'https://oneblood.example.com',
+      image: 'https://picsum.photos/seed/picsum/200',
+      livelink: 'https://example.com/oneblood',
       githublink: 'https://github.com/example/oneblood',
     }
   ];
 
-  // Filler data for articles
   const articles = [
-    { 
+    {   
       title: 'How to Set Up Your Dev Environment', 
-      description: 'A step-by-step guide on creating a productive development setup.'
+      description: 'A comprehensive guide to creating an efficient development setup.'
     },
     { 
-      title: 'Voila! Building a Modern Web App', 
-      description: 'Learn how to build sleek web applications using the latest tools.'
+      title: 'Voila: The Magic Behind Modern Web Apps', 
+      description: 'An exploration of cutting-edge web development techniques.'
     },
     { 
-      title: 'Lorem Ipsum: Understanding Dummy Text', 
-      description: 'An overview of lorem ipsum text and its importance in design.'
+      title: 'Lorem Ipsum and Its Origins', 
+      description: 'A look into the history and usage of placeholder text.'
     },
     { 
-      title: 'Ipsum Dolor: A Deep Dive', 
-      description: 'Exploring the history and usage of placeholder text in publishing.'
+      title: 'Ipsum: A Developer\'s Perspective', 
+      description: 'Insights on why we use dummy text in design and development.'
     },
     { 
-      title: 'Yeah, We Can Code!', 
-      description: 'Tips and tricks to enhance your coding skills in modern JavaScript.'
+      title: 'Yeah, Code It!', 
+      description: 'Tips and tricks to improve your coding skills in today’s landscape.'
     },
     { 
       title: 'Azure: Cloud Solutions Simplified', 
-      description: 'Discover how Azure can streamline your cloud computing needs.'
+      description: 'Understanding the basics of Azure cloud services and deployments.'
     }
   ];
 
   return (
     <>
-      <div id='main-home-container'>
-        {/* About Section */}
-        <div id="about">
-          <a href="https://www.linkedin.com/in/deepansh8888">
-            <img
-              src="https://picsum.photos/seed/picsum/200/300"
-              alt="my-photo"
-            />
-          </a>
-          <div>
-            <h1 className="thefont">i'm deepansh kumar</h1>
+      <div id="main-home-container">
+        <section id="about">
+          <img src="https://picsum.photos/seed/picsum/200" alt="Profile Picture" />
+          <h1 id='main-name'>i'm deepansh kumar</h1>
+          <div id="about-text">
+            <span> full-stack developer 👨‍💻</span>
+            <span> cloud computing enthusiast ✨</span>
+            {/* <span>side project connoisseur 🥃</span>
+            <span>open source maintainer 🎥</span> */}
           </div>
-          <div>
-            <h2>lead frontend developer 👨🏼‍💻</h2>
-            <h2>side project connoisseur 🥃</h2>
-            <h2>open source maintainer</h2>
-          </div>
-        </div>
+        </section>
 
         {/* Timeline Section */}
         <div id="timeline">
@@ -94,14 +85,15 @@ const Home = () => {
             <h2>iByte Infomatics</h2>
             <h3>Full Stack Web Developer</h3>
             <p>
-              Working on innovative projects and crafting robust solutions as a Full Stack Web Developer at iByte Infomatics.
+              Working on exciting projects and building innovative solutions as
+              a Full Stack Web Developer at iByte Infomatics.
             </p>
           </div>
           <div id="gfg">
             <h2>GeeksForGeeks</h2>
             <h3>Cloud Computing Article Writer</h3>
             <p>
-              Sharing insights on cloud computing and modern web technologies through engaging technical articles.
+              Creating engaging content and sharing insights as a tech-writer.
             </p>
           </div>
         </div>
@@ -114,10 +106,26 @@ const Home = () => {
           <div id="languages">
             <h2>languages</h2>
             <div>
-              <img className="mini-images" src="https://via.placeholder.com/50?text=JS" alt="JavaScript" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Python" alt="Python" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Java" alt="Java" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=C%23" alt="C#" />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="language"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="language"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="language"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="language"
+              />
             </div>
           </div>
 
@@ -125,10 +133,26 @@ const Home = () => {
           <div id="frontend">
             <h2>frontend</h2>
             <div>
-              <img className="mini-images" src="https://via.placeholder.com/50?text=React" alt="React" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Angular" alt="Angular" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Vue" alt="Vue" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Svelte" alt="Svelte" />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="frontend"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="frontend"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="frontend"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="frontend"
+              />
             </div>
           </div>
 
@@ -136,10 +160,26 @@ const Home = () => {
           <div id="tools">
             <h2>tools</h2>
             <div>
-              <img className="mini-images" src="https://via.placeholder.com/50?text=VSCode" alt="VSCode" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Git" alt="Git" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Figma" alt="Figma" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Slack" alt="Slack" />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="tool"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="tool"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="tool"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="tool"
+              />
             </div>
           </div>
 
@@ -147,21 +187,53 @@ const Home = () => {
           <div id="database">
             <h2>database</h2>
             <div>
-              <img className="mini-images" src="https://via.placeholder.com/50?text=MySQL" alt="MySQL" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=MongoDB" alt="MongoDB" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=PostgreSQL" alt="PostgreSQL" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Redis" alt="Redis" />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="database"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="database"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="database"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="database"
+              />
             </div>
           </div>
 
           {/* Backend */}
-          <div id="backend">
+          <div id="backend" className="">
             <h2>backend</h2>
             <div className="tech-images">
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Node" alt="Node.js" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Express" alt="Express.js" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Django" alt="Django" />
-              <img className="mini-images" src="https://via.placeholder.com/50?text=Flask" alt="Flask" />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="backend"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="backend"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="backend"
+              />
+              <img
+                className="mini-images"
+                src="https://picsum.photos/seed/picsum/200"
+                alt="backend"
+              />
             </div>
           </div>
         </div>
@@ -174,15 +246,27 @@ const Home = () => {
               <h3>{project.description}</h3>
               <div className="tech-images">
                 {project.techimages.map((img, idx) => (
-                  <img key={idx} src={img} className="mini-images" alt="tech icon" />
+                  <img key={idx} src={img} className="mini-images" alt="tech" />
                 ))}
               </div>
               <div id="project-image">
                 <img src={project.image} alt="project" />
               </div>
               <div className="project-links">
-                <a href={project.livelink} target="_blank" rel="noopener noreferrer">Live</a>
-                <a href={project.githublink} target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a
+                  href={project.livelink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live
+                </a>
+                <a
+                  href={project.githublink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
           ))}
@@ -204,15 +288,15 @@ const Home = () => {
 
       {/* Footer */}
       <div className="footer">
-        <a href="https://www.linkedin.com">
+        <a href="https://linkedin.com">
           <h1>footer</h1>
-          <img src="https://via.placeholder.com/50?text=LinkedIn" alt="linkedinLogo" />
+          <img src="https://picsum.photos/seed/picsum/200" alt="linkedinLogo" />
         </a>
         <a href="https://github.com">
-          <img src="https://via.placeholder.com/50?text=GitHub" alt="githubLogo" />
+          <img src="https://picsum.photos/seed/picsum/200" alt="githubLogo" />
         </a>
-        <a href="https://mail.google.com">
-          <img src="https://via.placeholder.com/50?text=Gmail" alt="gmailLogo" />
+        <a href="https://gmail.com">
+          <img src="https://picsum.photos/seed/picsum/200" alt="gmailLogo" />
         </a>
       </div>
     </>

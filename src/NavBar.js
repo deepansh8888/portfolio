@@ -21,12 +21,12 @@ const NavBar = () => {
         <h1 onClick={()=> navigate('/home')}>dk</h1>
       </div>
 
-     <div id='nav-buttons'>
-        <a href="gfg.com">articles</a>
-        <span>|</span>
+        <div id='nav-buttons'>
         <div onClick={()=>{navigate("/home")}}>home</div>
         <span>|</span>
-        <a href="blog.com">blog</a>
+        <a href="gfg.com">articles</a>
+        {/* <span>|</span>
+        <a href="blog.com">blog</a> */}
         <span>|</span>
         <div onClick={()=>{navigate("/contact")}}>contact</div>
         <span>|</span>

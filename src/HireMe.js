@@ -14,6 +14,18 @@ const HireMe = () => {
             <p>Please check out my <a href='resume/drive.com' className='hover-fill'>resume</a>  and 
              <span className='hover-fill' onClick={()=>navigate('/contact')} >contact</span> me!</p>
         </div>
+
+        <div className='contact-page-footer'>
+                <a href='linkedIn.com'>
+                    <img src='linkedin.png' alt='linkedinLogo' />
+                </a>
+                <a href='github.com'>
+                    <img src='github.png' alt='githiubLogo' />
+                </a>
+                <a href='gmail.com'>
+                    <img src='gmail.png' alt='gmailLogo' />
+                </a>
+            </div>
         </>
     );
 }
