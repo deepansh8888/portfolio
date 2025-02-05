@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
 
 
-        <div className='footer'>
+        <div className='contact-page-footer'>
                 <a href='linkedIn.com'>
                     <img src='linkedin.png' alt='linkedinLogo' />
                 </a>

@@ -16,9 +16,9 @@ const NavBar = () => {
     }
 
   return (
-    <>
+    <div id='navbar'>
       <div id="namelogo">
-        <h1>deepansh</h1>
+        <h1 onClick={()=> navigate('/home')}>dk</h1>
       </div>
 
      <div id='nav-buttons'>
@@ -34,7 +34,7 @@ const NavBar = () => {
 
         <button id="theme-change-btn" onClick={toggleFunction}>{toggleIcon}</button>
      </div>
-    </>
+    </div>
   );
 };
 
