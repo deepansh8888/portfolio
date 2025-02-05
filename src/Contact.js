@@ -12,14 +12,17 @@ const Contact = () => {
         <div>
             <div id='mail'>
                 <h1><span> 📧  </span></h1>
-                <h2>deepansh8888@gmail.com</h2>
+                <a href='mailto:deepansh8888@gmail.com'>
+                    <h2 className='hover-fill'>deepansh8888@gmail.com</h2>
+                    </a>
             </div>
-            <div id='googleForm'>
+            <div id='askmeanythig'>
                 <h1><span> 🙋🏼‍♂️ </span></h1>
-                <h2>ask me anything</h2>
+                <a href='https://github.com/deepansh8888/portfolio-ama/issues/new?template=Blank+issue'>
+                <h2 className='hover-fill'>ask me anything</h2>
+                </a>
             </div>
         </div>
-
 
 
         <div className='footer'>
