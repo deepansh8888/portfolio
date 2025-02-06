@@ -11,8 +11,8 @@ const HireMe = () => {
 
         <div>
             <p>I am always open to contract work, side projects, and collaborations.</p>
-            <p>Please check out my <a href='resume/drive.com' className='hover-fill'>resume</a>  and 
-             <span className='hover-fill' onClick={()=>navigate('/contact')} >contact</span> me!</p>
+            <p>Please check out my <a href='resume/drive.com' className='hover-fill'>  resume</a>  and 
+             <span className='hover-fill' onClick={()=>navigate('/contact')} >  contact  </span> me!</p>
         </div>
 
         <div className='contact-page-footer'>
@@ -26,6 +26,21 @@ const HireMe = () => {
                     <img src='gmail.png' alt='gmailLogo' />
                 </a>
             </div>
+
+
+            <div className='contact-page-footer'>
+        <a href="https://www.linkedin.com/in/deepansh8888">
+          <img src="/techImages/linkedinIcon.png" alt="linkedinLogo" />
+        </a>
+        <a href="https://github.com/deepansh8888">
+          <img src="/techImages/githubIcon.png" alt="githubLogo" />
+        </a>
+        <a href="mailto:deepansh8888@gmail.com">
+          <img src="/techImages/mailIcon.png" alt="gmailLogo" />
+        </a>
+            </div>
+
+            
         </>
     );
 }

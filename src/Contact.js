@@ -27,15 +27,15 @@ const Contact = () => {
 
 
         <div className='contact-page-footer'>
-                <a href='linkedIn.com'>
-                    <img src='linkedin.png' alt='linkedinLogo' />
-                </a>
-                <a href='github.com'>
-                    <img src='github.png' alt='githiubLogo' />
-                </a>
-                <a href='gmail.com'>
-                    <img src='gmail.png' alt='gmailLogo' />
-                </a>
+        <a href="https://www.linkedin.com/in/deepansh8888">
+          <img src="/techImages/linkedinIcon.png" alt="linkedinLogo" />
+        </a>
+        <a href="https://github.com/deepansh8888">
+          <img src="/techImages/githubIcon.png" alt="githubLogo" />
+        </a>
+        <a href="mailto:deepansh8888@gmail.com">
+          <img src="/techImages/mailIcon.png" alt="gmailLogo" />
+        </a>
             </div>
         </>
     );

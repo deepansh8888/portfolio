@@ -10,8 +10,8 @@ const Home = () => {
         'https://picsum.photos/seed/picsum/200'
       ],
       image: 'https://picsum.photos/seed/picsum/200',
-      livelink: 'https://example.com/blogwise',
-      githublink: 'https://github.com/example/blogwise',
+      livelink: 'https://blogwise-frontend.onrender.com/',
+      githublink: 'https://github.com/deepansh8888/blogwise',
     },
     {
       title: 'KubeWise',
@@ -22,7 +22,7 @@ const Home = () => {
       ],
       image: 'https://picsum.photos/seed/picsum/200',
       livelink: 'https://example.com/kubewise',
-      githublink: 'https://github.com/example/kubewise',
+      githublink: 'https://github.com/deepansh8888/OneBlood',
     },
     {
       title: 'OneBlood',
@@ -32,8 +32,8 @@ const Home = () => {
         'https://picsum.photos/seed/picsum/200'
       ],
       image: 'https://picsum.photos/seed/picsum/200',
-      livelink: 'https://example.com/oneblood',
-      githublink: 'https://github.com/example/oneblood',
+      livelink: 'https://oneblood-frontend.onrender.com/',
+      githublink: 'https://github.com/deepansh8888/OneBlood',
     }
   ];
 
@@ -67,27 +67,24 @@ const Home = () => {
   const skills = [
     {
       title: 'languages',
-      images: ['', '', ''],
+      images: ['/techImages/cpp.png', '/techImages/javascript.png', '/techImages/cLang.png'],
     },{
-      title: 'frontend',
-      images: ['', '', ''],
+      title: 'frameworks',
+      images: ['/techImages/react.png', '/techImages/express.png' , '/techImages/node.png'],
     },{
       title: 'tools',
-      images: ['', '', ''],
+      images: ['/techImages/azure.png', '/techImages/docker.png', '/techImages/kubernetes.png', '/techImages/git.png', '/techImages/vscode.png', '/techImages/github.png'],
     },{
       title: 'database',
-      images: ['', '', ''],
-    },{
-      title: 'backend',
-      images: ['', '', ''],
-    }
+      images: ['/techImages/mysql.png', '/techImages/mongodb.png'],
+    },
   ];
 
   return (
     <>
       <div id="main-home-container">
         <section id="about">
-          <img src="https://picsum.photos/seed/picsum/200" alt="Profile Picture" />
+          <img id='my-photo' src="/techImages/deepansh.jpg" alt="Profile Picture" />
           <h1 id='main-name'>i'm deepansh kumar</h1>
           <div id="about-text">
             <span> full-stack developer 👨‍💻</span>
@@ -118,10 +115,11 @@ const Home = () => {
         </div>
 
         <div id='skills'>
-          <div id='skill-card'>
+        <h1 className="thefont">skills</h1>
+          <div>
             {
               skills.map((skillCategory)=>{
-                return (<>
+                return (<div id='skill-card'>
                   <h2>{skillCategory.title}</h2>
                   <div id='tech-images-div'>
                     {
@@ -134,7 +132,7 @@ const Home = () => {
                       })
                     }
                   </div>
-                </>);
+                </div>);
               })
             }
           </div>
@@ -148,27 +146,18 @@ const Home = () => {
             <div id="project-card" key={index}>
               <h2>{project.title}</h2>
               <h3>{project.description}</h3>
-              <div className="tech-images">
+              {/* <div className="tech-images">
                 {project.techimages.map((img, idx) => (
                   <img key={idx} src={img} className="mini-images" alt="tech" />
                 ))}
-              </div>
+              </div> */}
               <div id="project-image">
                 <img src={project.image} alt="project" />
               </div>
               <div className="project-links">
-                <a
-                  href={project.livelink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live
-                </a>
-                <a
-                  href={project.githublink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={project.livelink}>
+                  Live  </a><br/><br/>
+                <a href={project.githublink}  >
                   GitHub
                 </a>
               </div>
@@ -192,15 +181,14 @@ const Home = () => {
 
       {/* Footer */}
       <div className="footer">
-        <a href="https://linkedin.com">
-          <h1>footer</h1>
-          <img src="https://picsum.photos/seed/picsum/200" alt="linkedinLogo" />
+        <a href="https://www.linkedin.com/in/deepansh8888">
+          <img src="/techImages/linkedinIcon.png" alt="linkedinLogo" />
         </a>
-        <a href="https://github.com">
-          <img src="https://picsum.photos/seed/picsum/200" alt="githubLogo" />
+        <a href="https://github.com/deepansh8888">
+          <img src="/techImages/githubIcon.png" alt="githubLogo" />
         </a>
-        <a href="https://gmail.com">
-          <img src="https://picsum.photos/seed/picsum/200" alt="gmailLogo" />
+        <a href="mailto:deepansh8888@gmail.com">
+          <img src="/techImages/mailIcon.png" alt="gmailLogo" />
         </a>
       </div>
     </>
