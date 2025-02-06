@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: space-between; /* Distributes space between logo and buttons */
   /* align-items: center; */
-  width: 100%;
+ 
   padding: 15px; /* Adjust as needed */
 }
 
@@ -80,7 +80,7 @@ body {
   font-family: "Bowlby One", serif;
   font-size: 50px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   margin: 20px 0;
 }
 
@@ -111,7 +111,20 @@ body {
 
 #timeline div:hover {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);  /* Only specify what changes on hover */
+}
 
+#skill-card{
+  border: 3.5px solid black;
+  padding: 10px;
+  margin: 35px auto;
+  max-width: 45vw;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
+  transition: box-shadow 0.2s ease;  /* Put transition in the main rule, not the hover */
+}
+
+#skill-card:hover {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);  /* Only specify what changes on hover */
 }
 
 #skills h2 {
@@ -150,6 +163,18 @@ width: 45vw;
 }
 
 #article-card:hover {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+}
+
+#project-card{
+  border: 3.5px solid black;
+  width: 45vw;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
+  transition: box-shadow 0.2s ease;
+  margin: 35px auto;
+}
+
+#project-card:hover{
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 }
 

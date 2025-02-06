@@ -56,11 +56,30 @@ const Home = () => {
     },
     { 
       title: 'Yeah, Code It!', 
-      description: 'Tips and tricks to improve your coding skills in today’s landscape.'
+      description: 'Tips and tricks to improve your coding skills in today landscape.'
     },
     { 
       title: 'Azure: Cloud Solutions Simplified', 
       description: 'Understanding the basics of Azure cloud services and deployments.'
+    }
+  ];
+
+  const skills = [
+    {
+      title: 'languages',
+      images: ['', '', ''],
+    },{
+      title: 'frontend',
+      images: ['', '', ''],
+    },{
+      title: 'tools',
+      images: ['', '', ''],
+    },{
+      title: 'database',
+      images: ['', '', ''],
+    },{
+      title: 'backend',
+      images: ['', '', ''],
     }
   ];
 
@@ -98,148 +117,33 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Skills Section */}
-        <div id="skills">
-          <h1 className="thefont">skills</h1>
-
-          {/* Languages */}
-          <div id="languages">
-            <h2>languages</h2>
-            <div>
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="language"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="language"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="language"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="language"
-              />
-            </div>
-          </div>
-
-          {/* Frontend */}
-          <div id="frontend">
-            <h2>frontend</h2>
-            <div>
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="frontend"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="frontend"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="frontend"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="frontend"
-              />
-            </div>
-          </div>
-
-          {/* Tools */}
-          <div id="tools">
-            <h2>tools</h2>
-            <div>
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="tool"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="tool"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="tool"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="tool"
-              />
-            </div>
-          </div>
-
-          {/* Database */}
-          <div id="database">
-            <h2>database</h2>
-            <div>
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="database"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="database"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="database"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="database"
-              />
-            </div>
-          </div>
-
-          {/* Backend */}
-          <div id="backend" className="">
-            <h2>backend</h2>
-            <div className="tech-images">
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="backend"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="backend"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="backend"
-              />
-              <img
-                className="mini-images"
-                src="https://picsum.photos/seed/picsum/200"
-                alt="backend"
-              />
-            </div>
+        <div id='skills'>
+          <div id='skill-card'>
+            {
+              skills.map((skillCategory)=>{
+                return (<>
+                  <h2>{skillCategory.title}</h2>
+                  <div id='tech-images-div'>
+                    {
+                      skillCategory.images.map((img)=>{
+                        return (
+                          <>
+                          <img src={img} alt='tech-img' className='mini-images' />
+                          </>
+                        );
+                      })
+                    }
+                  </div>
+                </>);
+              })
+            }
           </div>
         </div>
+          
 
         {/* Projects Section */}
         <div id="projects">
+        <h1 className="thefont">projects</h1>
           {projects.map((project, index) => (
             <div id="project-card" key={index}>
               <h2>{project.title}</h2>
