@@ -58,39 +58,64 @@ body {
   padding: 0px;
 }
 
+/* About section */
+#about-main-div {
+  display: inline-block;
+}
+
 #about {
   display: flex;
-  flex-direction: row; /* Changed from column to row */
-  align-items: flex-start; /* Changed from center to align items at the start */
-  padding: 20px;
-  gap: 30px; /* Adds space between image and content */
+  max-width: 55vw;
+  padding-bottom: 100px;
+  margin: 0;
 }
 
-#my-photo {
-  flex-shrink: 0; /* Prevents image from shrinking */
-  height: 36vh;
+#about-photo {
+  height: 30vh;
   border-radius: 50%;
   border: 7px solid black;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-#my-photo:hover{
-  border-color: purple;
-  transform: rotateX(10deg) rotateY(10deg);
-
+#about-photo:hover {
+  border-color: #B771E5;
+  transform: rotate(-6deg);
+  cursor: pointer;
 }
 
-#main-name {
+#about-name {
   font-family: "Bowlby One", serif;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 2.6rem;
+  margin: 10px 0px;
+  align-self: flex-start;
 }
+
+#about-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+/* About section End */
+
 
 .thefont {
   font-family: "Bowlby One", serif;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: bold;
+  margin: 20px 0 0;
+  transition: ease 0.3s;
+  display: inline-block;
+}
+
+.thefont:hover{
+  text-shadow: 2.2px 2.2px #B771E5;
+  cursor: pointer;
+}
+
+.main-headings{
+  margin-bottom: 12px;
   text-align: left;
-  margin: 20px 0;
 }
 
 #about-text {
@@ -111,7 +136,7 @@ body {
 #timeline div {
   border: 3.5px solid black;
   padding: 10px;
-  margin: 35px auto;
+  margin: 0px auto 35px;
   max-width: 45vw;
   border-radius: 5px;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
@@ -125,7 +150,7 @@ body {
 #skill-card{
   border: 3.5px solid black;
   padding: 10px;
-  margin: 35px auto;
+  margin: 0px auto 35px;
   max-width: 45vw;
   border-radius: 5px;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
@@ -144,26 +169,22 @@ body {
 
 .tech-images-div {
   display: flex;
-  justify-content: space-evenly; /* Ensures even spacing between images */
-  align-items: center; /* Aligns images vertically */
-  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
-  gap: 20px; /* Adds some spacing between images */
-  width: 100%; /* Ensures it takes full width of parent */
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 50%;
 }
 
 .mini-images {
-  /* max-width: 100px; Adjust size as needed */
-  max-height: 38px; /* Maintain aspect ratio */
-  flex: 1; /* Allows images to grow evenly */
-  object-fit: contain; /* Ensures images maintain their aspect */
+  max-height: 38px;
+  width: auto; 
+  object-fit: contain;
+  margin-top: 10px; /* Changed 'gap' to 'margin-top' for consistency */
 }
 
 
 /* Blog Styling */
-
-#articles{
-width: 45vw;
-}
 
 #articlesbox {
   display: flex;
@@ -172,6 +193,7 @@ width: 45vw;
   gap: 15px;
   width: 45vw;
   padding: 0px;
+  margin: 0px auto 35px;
 }
 
 #article-card {
@@ -181,6 +203,7 @@ width: 45vw;
   border-radius: 5px;
   box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
   transition: box-shadow 0.2s ease;
+  
 }
 
 #article-card:hover {
@@ -192,11 +215,37 @@ width: 45vw;
   width: 45vw;
   box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
   transition: box-shadow 0.2s ease;
-  margin: 35px auto;
+  margin: 0px auto 35px;
 }
 
 #project-card:hover{
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+}
+
+
+#publicationsbox {
+  justify-content: center;
+  width: 45vw;
+  padding: 0px;
+  margin: 0px auto 35px;
+}
+
+#publication-card {
+  border: 3.5px solid black;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
+  transition: box-shadow 0.2s ease;
+  margin: 0px auto 35px;
+}
+
+#publication-card:hover {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+}
+
+.full-div-links{
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Footer */
@@ -233,6 +282,8 @@ width: 45vw;
 .contact-page-footer img {
   height: 50px;
 }
+
+
 
 
 
